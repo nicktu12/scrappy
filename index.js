@@ -15,10 +15,9 @@ app.get('/scrappy/native-instruments', asyncMiddleware(async (req, res, next) =>
     .goto('https://www.native-instruments.com/en/career-center/')
     .wait('.job')
     .evaluate(function () {
-      var medata = [];
       var myHost = 'https://www.native-instruments.com/'
       var nameNodes = document.querySelectorAll('.job')
-      var list = [].slice.call(nameNodes); // Why did I have to do this?
+      var list = [].slice.call(nameNodes);
       return list.map(function(node){ 
         return {
             "jobtitle": node.innerText,
