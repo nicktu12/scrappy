@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "electron": "^3.0.10",
+    "express": "^4.16.4",
     "nightmare": "^3.0.1",
     "nodemon": "^1.18.6"
   }
